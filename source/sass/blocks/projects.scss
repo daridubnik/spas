@@ -54,6 +54,7 @@
   &:hover,
   &:focus-within {
     border: 7px solid $color-bahia;
+    outline: none;
   }
 }
 
@@ -71,7 +72,8 @@
   transition: transform 0.3s;
 }
 
-.projects__item:hover img {
+.projects__item:hover img,
+.projects__item:focus-within img {
   transform: scale(1.1);
 }
 
@@ -123,8 +125,10 @@
   color: $color-default-white;
   background-color: $color-bahia;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-turbo;
+    outline: none;
   }
 
   &:active {
@@ -136,8 +140,10 @@
   color: $color-grey;
   background-color: $color-ivory;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-turbo;
+    outline: none;
   }
 
   &:active {
@@ -145,7 +151,8 @@
   }
 }
 
-.projects__item-button--secondary:hover span {
+.projects__item-button--secondary:hover span,
+.projects__item-button--secondary:focus span {
   border-bottom: 2px solid $color-turbo;
 }
 
@@ -171,8 +178,10 @@
   cursor: pointer;
   z-index: 10;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-turbo;
+    outline: none;
   }
 }
 
