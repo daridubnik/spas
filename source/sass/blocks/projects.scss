@@ -50,11 +50,17 @@
   border: 7px solid $color-default-white;
   border-radius: 20px;
   background-color: $color-default-white;
+
+  &:hover,
+  &:focus-within {
+    border: 7px solid $color-bahia;
+  }
 }
 
 .projects__item-image {
   border-radius: 15px;
   background-color: $color-grey;
+  overflow: hidden;
 }
 
 .projects__item-image img {
@@ -62,6 +68,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.projects__item:hover img {
+  transform: scale(1.1);
 }
 
 .projects__item-content {
@@ -101,16 +112,41 @@
   border-radius: 15px;
   font-size: 14px;
   line-height: 19px;
+  user-select: none;
+
+  &:hover {
+    padding: 22px 35px 18px 25px;
+  }
 }
 
 .projects__item-button--primary {
   color: $color-default-white;
   background-color: $color-bahia;
+
+  &:hover {
+    background-color: $color-turbo;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
 }
 
 .projects__item-button--secondary {
   color: $color-grey;
   background-color: $color-ivory;
+
+  &:hover {
+    color: $color-turbo;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
+}
+
+.projects__item-button--secondary:hover span {
+  border-bottom: 2px solid $color-turbo;
 }
 
 .projects__item-button svg {
@@ -118,6 +154,10 @@
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
+}
+
+.projects__item-button:hover svg {
+  margin: 2px 0 0 0;
 }
 
 .projects__button {
@@ -129,6 +169,11 @@
   border-radius: 50%;
   background-color: $color-default-white;
   cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    color: $color-turbo;
+  }
 }
 
 .projects__button--prev {
