@@ -1358,6 +1358,11 @@ img {
   font-size: 58px;
   line-height: 64px;
   letter-spacing: -1.7px;
+  -webkit-transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  transform: translateX(150%);
+  -webkit-animation: animation-to-left 1s forwards;
+  animation: animation-to-left 1s forwards;
 }
 
 .projects__top-content p {
@@ -1366,10 +1371,20 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #787878;
+  -webkit-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  transform: translateX(-150%);
+  -webkit-animation: animation-to-right 1s forwards;
+  animation: animation-to-right 1s forwards;
 }
 
 .projects__swiper-wrapper {
   position: relative;
+  -webkit-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  transform: translateY(150%);
+  -webkit-animation: animation-to-top 1.5s forwards;
+  animation: animation-to-top 1.5s forwards;
 }
 
 .projects__list {
@@ -1560,4 +1575,76 @@ img {
 
 .projects__swiper-button--next {
   right: -32px;
+}
+
+@-webkit-keyframes animation-to-right {
+  0% {
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation-to-right {
+  0% {
+    -webkit-transform: translateX(-150%);
+    transform: translateX(-150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animation-to-left {
+  0% {
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation-to-left {
+  0% {
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animation-to-top {
+  0% {
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation-to-top {
+  0% {
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
