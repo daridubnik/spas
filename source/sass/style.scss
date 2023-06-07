@@ -1,8 +1,17 @@
-/* GLOBAL */
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+
+// Global
+// ---------------------------------
 @import "global/variables";
-@import "global/container";
 @import "global/fonts";
 @import "global/reboot";
+@import "global/container";
 
-/* BLOCKS */
+
+// Blocks
+// ---------------------------------
 @import "blocks/projects";

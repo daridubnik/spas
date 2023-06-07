@@ -4,8 +4,8 @@
   font-family: "Manrope";
 
   font-display: swap;
-  src: url("../../fonts/manrope-medium.woff2") format("woff2"),
-    url("../../fonts/manrope-medium.woff") format("woff");
+  src: url("./../fonts/manrope-medium.woff2") format("woff2"),
+    url("./../fonts/manrope-medium.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-family: "Manrope";
 
   font-display: swap;
-  src: url("../../fonts/manrope-semi-bold.woff2") format("woff2"),
-    url("../../fonts/manrope-semi-bold.woff") format("woff");
+  src: url("./../fonts/manrope-semi-bold.woff2") format("woff2"),
+    url("./../fonts/manrope-semi-bold.woff") format("woff");
 }
 
 @font-face {
@@ -24,6 +24,6 @@
   font-family: "PT Sans Caption";
 
   font-display: swap;
-  src: url("../../fonts/pt-sans-caption-regular.woff2") format("woff2"),
-    url("../../fonts/pt-sans -caption-regular.woff") format("woff");
+  src: url("./../fonts/pt-sans-caption-regular.woff2") format("woff2"),
+    url("./../fonts/pt-sans -caption-regular.woff") format("woff");
 }
